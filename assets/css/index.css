@@ -1,0 +1,29 @@
+.launch-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.launch-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.launch-button:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .launch-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}

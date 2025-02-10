@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #FFD700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Content */
+h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 2px solid #fff;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Score */
+#score {
+    font-size: 1.5rem;
+    color: #00FF00;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotiChecker.ai - AI Roti Roundness Analyzer</title>
+    <meta name="description" content="Check your roti’s roundness using AI for perfect rotis every time!" />
+    <meta name="keywords" content="roti checker, AI, roundness test, perfect roti, Indian bread analyzer" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="RotiChecker.ai - AI Powered Roti Analysis!" />
+    <meta property="og:description"
+        content="Analyze your roti’s roundness with AI. Upload a picture for instant feedback!" />
+    <meta property="og:image" content="https://rotichecker.ai/meme.png" />
+    <meta property="og:url" content="https://rotichecker.ai" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://rotichecker.ai" />
+    <link rel="icon" type="image/png" href="roti.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rotichecker.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C75DBQ6XK0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-C75DBQ6XK0');
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="title-container">
+                <img class="roti-icon" src="roti.png" alt="Roti icon">
+                <a href="index.html" class="nav-logo">RotiChecker.ai</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/animesh-chouhan/rotichecker.ai" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>RotiChecker.ai</h1>
+        <input type="file" id="upload" accept="image/*">
+        <canvas id="canvas"></canvas>
+        <div id="score">Roundness Score: N/A</div>
+    </main>
+
+
+    <p class="license">
+        <a property="dct:title" rel="cc:attributionURL" href="https://rotichecker.ai">RotiChecker.ai</a> made with ❤️ by
+        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://animeshchouhan.com">Animesh
+            Chouhan</a>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+            rel="license noopener noreferrer">
+            CC BY-NC-SA 4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="BY">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="NC">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="SA">
+    </p>
+
+    <!-- External JavaScript -->
+    <script async src="https://docs.opencv.org/4.5.2/opencv.js"></script>
+    <script src="assets/js/rotichecker.js"></script>
+
+</body>
+
+</html>

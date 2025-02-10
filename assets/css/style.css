@@ -133,6 +133,12 @@ h1 {
     margin-top: 10px;
 }
 
+h2 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #FFD700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
 /* Content container for vertical centering */
 .content {
