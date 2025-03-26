@@ -50,6 +50,8 @@ function processRoti(img) {
         let enclosingCircle = cv.minEnclosingCircle(maxContour);
         let center = enclosingCircle.center;
         let radius = enclosingCircle.radius;
+        let maxRadius = radius
+        // console.log(Math.PI * radius * radius)
 
         // Draw detected circle
         cv.circle(src, center, radius, [0, 255, 0, 255], 5);
@@ -103,7 +105,9 @@ function processRoti(img) {
 
         // Calculate roundness
         let perimeter = cv.arcLength(maxContour, true);
-        let circularity = (4 * Math.PI * maxArea) / (perimeter * perimeter);
+        let Area = Math.PI * maxRadius * maxRadius
+        let circularity = (4 * Math.PI * Area) / (perimeter * perimeter);
+        console.log(maxArea, perimeter)
         let score = Math.round(circularity * 100); // Normalize to 0-100
 
         document.getElementById('score').innerText = `Roundness Score: ${score}`;
